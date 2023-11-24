@@ -21,7 +21,7 @@ function Admin() {
   const [editTaskId, setEditTaskId] = useState(-1);
 
   useEffect(() => {
-    fetch("http://localhost:5000/admin/todos").then((res) => {
+    fetch("https://fsd-todo.onrender.com/admin/todos").then((res) => {
       return res.json();
     }
     ).then((data) => {
@@ -54,7 +54,7 @@ function Admin() {
       console.log("user id is" + userid);
       // taskList.splice(index, 1);
       // setTaskList([...taskList]);
-      fetch("http://localhost:5000/todos/" + userid +"/"+ taskList[index]._id, {
+      fetch("https://fsd-todo.onrender.com/todos/" + userid +"/"+ taskList[index]._id, {
         method: "DELETE",
         headers: {
           "Content-Type": "application/json",
@@ -83,7 +83,7 @@ function Admin() {
   };
 
   const handlelogout = async () => {
-    fetch('http://localhost:5000/users/logout', {
+    fetch('https://fsd-todo.onrender.com/users/logout', {
       method: 'GET',
       headers: { 'Content-Type': 'application/json' },
     }).then(res => res.json())

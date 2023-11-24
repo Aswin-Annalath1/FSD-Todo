@@ -24,7 +24,7 @@ const InputComponent = ({editTaskId,setEditTaskId,taskList,setTaskList,text,setT
     //Add todo case..
     if (!!text && editTaskId < 1) {
       //This is Adding to BE
-      fetch("http://localhost:5000/todos/"+userid,{
+      fetch("https://fsd-todo.onrender.com/todos/"+userid,{
         method: "POST",
         headers: {"Content-Type": "application/json"},
         body: JSON.stringify({ title: text})  //Whatever i write currently in FE
@@ -52,7 +52,7 @@ const InputComponent = ({editTaskId,setEditTaskId,taskList,setTaskList,text,setT
     let index = taskList.findIndex((obj) => obj.id === editTaskId);  //editTaskId we got from app.jsx
     if (index > -1) {
     //This is Edited add to BE
-    fetch("http://localhost:5000/todos/"+userid+"/"+taskList[index]._id,{
+    fetch("https://fsd-todo.onrender.com/todos/"+userid+"/"+taskList[index]._id,{
       //PUT help again edit by admin if required..
       method: "PUT",
       headers: {"Content-Type": "application/json"},

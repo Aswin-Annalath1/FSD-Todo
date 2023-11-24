@@ -90,6 +90,8 @@
 
 
 
-//// DEPLOYMENT (Backend:render) (Frontend:Vercel)...If need we can use (FE:netlify)
+//// DEPLOYMENT (BE & FE:render) (BE & FE:Vercel) ...If need we can use (FE:netlify)
+
 // IMPORTANT : We have to First Connect DataBase to online...MONGODB ATLAS...(@ time: 2:20)...//MONGO Username:aswinannalath ..Password:poison...//Then if needed we have add data again..to DB
-// IMPORTANT : First we should deploy Backend and then deploy Frontend...
+
+// IMPORTANT : First we should deploy Backend and then deploy Frontend...(Because we get API endpoints after BE Deployment and then we paste that url to FE CODE and push github and Depoy FE )

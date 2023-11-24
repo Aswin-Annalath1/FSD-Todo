@@ -1,4 +1,4 @@
-//Import Sction
+//Import Section
 import Admin from "./components/Admin";
 import Login from "./components/Login";
 import Register from "./components/Register";
