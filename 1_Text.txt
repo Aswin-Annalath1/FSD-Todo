@@ -1,0 +1,94 @@
+//// DAY 1
+
+//  First we are starting with Backend
+
+1. First created server folder and in terminal we moved (cd server)...
+2. We created node environment using npm (npm init --y)..//it will create package.json..//Then through new Vscode moved to server folder...//index.js file created in server folder..
+3. Backend libraries Installing ( express, mongoose, body-parser, cors, nodemon)...( npm i express mongoose body-parser cors nodemon) //cors: it allow cross origins, to send request from FE and receive response from BE (FE & BE run at diff core)
+4. Then we install advanced libraries (dotenv, bcrypt, jsonwebtoken)..(npm i dotenv bcrypt jsonwebtoken)..//bcrypt: hash the password..//jwt:it is to assign each and every user unique jsonwebtoken..
+
+// We Create Frontend here...
+
+5. Then outide server directory (cd ..) we install vite(FE tool for speed) and select FE framework (npm create vite@latest client)..//in terminal select React & then javascript..//client: This is the name of the directory or folder where the new project will be created
+6. Then go to client(cd client) and do ( npm i ) only...//To start client FE do ( npm run dev )...
+7. Now go to Tailwind css (https://tailwindcss.com/docs/guides/vite)..//Now on (cd client) install (npm install -D tailwindcss postcss autoprefixer)..//Then install (npx tailwindcss init -p)..
+8. Then in client folder, tailwind.config.js file is taken and Configure your template paths pasted ..//Then open file src=>index.css and paste there ...Add the Tailwind directives to your CSS
+9. Now run project to check (cd client) by ...npm run dev..
+
+
+// We Create Backend here...
+
+10. Now we set up index.js..
+11. set nodemon on package.json (//rewrite scripts...), which help restart server automatically if changees occured 
+12. Then in index.js we are connecting our project to mongodb using mongoose...
+13. Now we create a home route...// Then a model for it created in (todo.js)..//Then import in index.js file
+14. Using Thunder client(instead postman)..//Now in (app.post) we store data to Db and send res or err..(check with postman)
+15. Now create a Folder structures...controller...routes
+16. Now we create //schema in models..//Logic in controller..//router in routes..
+17. Now create main route, in routes index.js and then export it to main index.js file and we use it there (//app.use)
+18. Then we can check with postman by adding data in body...//also getting datas...
+19. Now we create all required... logic in controller file and route in todoroutes.js 
+
+20. Now we create files usercontroller...// Then model user.js...// Then userroutes...
+21. Then created user.js file and signUp , login, logout in usercontroller and adding to userroutes and then update it to routes index.js file .
+22. Now we can check signup with postman..
+
+
+//// DAY 2
+
+
+// We Create Frontend here...
+
+1. we have cleared app.css and pasted a code given in app.jsx and a file created inputComponent and pasted code...
+2. In App.jsx we have 3 sections..//First import..//javascript..//after return html section written...
+3. We can easily learn and use templates in tailwind (https://tailwindcss.com/docs/installation)...//If we need icons just search name with svg and download & open the file in vscode.
+
+4. we have to create FE logic arcording to our requirement...
+5. we have created delete task and a small edit part in app.jsx and from there we take props to inputComponent.jsx and there we do add and edit part fully....
+
+6. Then we have created backend with userid routes and setted it up....
+
+7.Then in FE app.jsx below state variable useEffect called for Api calling and fetch data...
+8. Then we have to call api and cors origin have to be changed and connect with FE fetch..
+9. Then in main.jsx strict mode has to be changed then data will not DOUBLED.
+10. Then we have to use fetch url route we created in CRUD to connect BE with FE.
+
+11. Now we have to create signUp page..//so create Register folder in components...
+12. Then take a template signin to register.jsx (https://v1.tailwindcss.com/components/forms)
+13. Then we have to create Login page also...
+14. Then we have to create Todolistmain.jsx page and shift code from app.jsx to it...
+15. Now we are installing (npm i react-router-dom) to incoporate all route pages in app.jsx...
+16. Now create navigate from register to todolistmain...//From login to todolistmain...
+
+
+//// DAY 3
+
+
+//1. We can create connections if Dont have the account or have the account on pages of login and register...
+//2. Now we are trying to connect details of FE and BE ....
+//3. Then Fully checking of login and register done...
+
+//4. Now we are creating navbar... (https://flowbite.com/docs/components/navbar/)
+//5. Then we create Route for PAGE NOT FOUND in app.jsx
+//6. Now lets create Enter key adding items...
+
+
+//7. Now we have to create Admin who can acess all...
+//8. we created index.js adminrote first...//Then created admincontroller...and other required BE
+
+//9. Now create FE admin in app.jsx..//Then in login.jsx..//Then in component create new Admin.jsx
+
+
+
+//// So we have Finished FSD
+
+//We used tailwind...vite(which is very fast)...//...and MERN ...
+
+//Future scope...
+1. Admin want to get all user names and details( not only task//Route made UI had to be setted..)
+2. Admin want to create task for other users also...(making change in todo add case..fetch)
+
+
+
+//// DEPLOYMENT (Backend:render) (Frontend:Vercel)...If need we can use (FE:netlify)
+// IMPORTANT : First we should deploy Backend and then deploy Frontend...
