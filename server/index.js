@@ -19,7 +19,7 @@ app.use(bodyParser.json()) //bodyparser help to read json data coming from reque
 app.use(bodyParser.urlencoded({extended: true})) //It is middleware which allow bodyparser to pass command to next line..
 
 //Here we are connecting project to database mongodb
-mongoose.connect('mongodb://0.0.0.0:27017/Todonotes', )   //{useNewUrlParser: true, useUnifiedTopology: true}
+mongoose.connect('mongodb+srv://aswinannalath:poison@cluster0.bszqfht.mongodb.net/', )   //{useNewUrlParser: true, useUnifiedTopology: true}
 .then(() => {console.log("Connected to database")})
 .catch((error) => {console.log("Error connecting to database",error)})
 

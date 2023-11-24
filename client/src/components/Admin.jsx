@@ -89,6 +89,7 @@ function Admin() {
     }).then(res => res.json())
       .then(data => {
         console.log("logout message is " + data)
+        
         navigate("/login")
       }
       )
