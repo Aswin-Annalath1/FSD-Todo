@@ -16,6 +16,7 @@ router.get("/:userid/:id", gettodo)
 router.post("/:userid/", posttodos)
 router.delete("/:userid/:id", deletetodos)
 router.put("/:userid/:id", updatetodo)
+                //status is given because in one file we shouldn't have same route paths
 router.put("/:userid/status/:id", updatetodostatus)
 
 module.exports = router

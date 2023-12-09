@@ -9,7 +9,7 @@
 
 // We Create Frontend here...
 
-5. Then outide server directory (cd ..) we install vite(FE tool for speed) and select FE framework (npm create vite@latest client)..//in terminal select React & then javascript..//client: This is the name of the directory or folder where the new project will be created
+5. To create client folder we come outide server directory (cd ..) we install vite(FE tool for speed) and select FE framework (npm create vite@latest client)..//in terminal select React & then javascript..//client: This is the name of the directory or folder where the new project will be created
 6. Then go to client(cd client) and do ( npm i ) only...//To start client FE do ( npm run dev )...
 7. Now go to Tailwind css (https://tailwindcss.com/docs/guides/vite)..//Now on (cd client) install (npm install -D tailwindcss postcss autoprefixer)..//Then install (npx tailwindcss init -p)..
 8. Then in client folder, tailwind.config.js file is taken and Configure your template paths pasted ..//Then open file src=>index.css and paste there ...Add the Tailwind directives to your CSS
@@ -46,6 +46,8 @@
 4. we have to create FE logic arcording to our requirement...
 5. we have created delete task and a small edit part in app.jsx and from there we take props to inputComponent.jsx and there we do add and edit part fully....
 
+@ 57:00 Min How to download icons....
+
 6. Then we have created backend with userid routes and setted it up....
 
 7.Then in FE app.jsx below state variable useEffect called for Api calling and fetch data...
@@ -78,7 +80,7 @@
 
 //9. Now create FE admin in app.jsx..//Then in login.jsx..//Then in component create new Admin.jsx
 
-
+//10. Deployed BE in Rende.com // FE in Vercel.com @ time:2:50:00
 
 //// So we have Finished FSD
 

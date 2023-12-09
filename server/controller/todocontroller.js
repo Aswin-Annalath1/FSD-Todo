@@ -17,7 +17,7 @@ module.exports.gettodos = async(req,res) => {      //It is exported to router as
 module.exports.gettodo = async(req,res) => {     
     try{
         const userID = req.params.userid    //Here we take userid from url and paste with task created..
-        const todo = await Todo.findById(req.params.id)
+        const todo = await Todo.findById(req.params.id) //We can Acess this id using useParams hook..(The name (id) is given according to Route path given (:id) in App.js )
         res.json(todo)
     }
     catch(error){
